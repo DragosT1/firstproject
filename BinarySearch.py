@@ -16,7 +16,7 @@ exists = -1
 
 while maxim>=minim:
 	if(X == listelem[maxim]):
-		print("Value is found at index: "+ maxim)
+		print("Value can be found at index: "+ maxim)
 		exists = 1
 		break
 	elif(X < listelem[maxim / 2]):
