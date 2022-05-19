@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="pydemo",
+    name="myproject",
     version="0.0.1",
-    description="Python demo",
+    description="Structured proj",
     author="Team",
     author_email="",
     # url="https://github.com/CleverSoftwareSolutions/fashion_flask/",
