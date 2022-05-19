@@ -19,10 +19,7 @@ class Cat(object):
 
 
 if __name__ == "__main__":
-    c = Cat("Feli")
-    print(c)
-    test_function()
-    drink()
+
     input = open("parserart/parseArticle.py", "r")
     cleanedText = replaceUnwantedChar(input)
     findPhoneNb(cleanedText)
