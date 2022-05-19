@@ -72,11 +72,21 @@ def top5Words (list1,list2):
             if list1[allWords] == list2[wordUnique]:
                 dicts[list2[wordUnique]] += 1
 
-
-    sortedunuque = (sorted(dicts))
+    sortedunuque = (sorted(dicts.items(), key=lambda val: val[1]))
     print("top1 word appearance is: " + str(sortedunuque[len(sortedunuque)-1]))
     print("top2 word appearance is: " + str(sortedunuque[len(sortedunuque) - 2]))
     print("top3 word appearance is: " + str(sortedunuque[len(sortedunuque) - 3]))
     print("top4 word appearance is: " + str(sortedunuque[len(sortedunuque) - 4]))
     print("top5 word appearance is: " + str(sortedunuque[len(sortedunuque) - 5]))
 
+# def main():
+#     input = open("/Users/user/work/firstproject/articleInput.txt", "r")
+#     cleanedText = replaceUnwantedChar(input)
+#     findPhoneNb(cleanedText)
+#     countTotalWords(cleanedText)
+#     uniqueWordsList = countUniqueWords(cleanedText)
+#     print("Number of unique words is: " + str(len(uniqueWordsList)))
+#     top5Words(cleanedText, uniqueWordsList)
+#
+# if __name__ == "__main__":
+#     main()
