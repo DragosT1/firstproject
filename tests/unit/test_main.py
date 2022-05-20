@@ -1,11 +1,12 @@
-# from pydemo.main import Cat
+from myproject.parserart.parseArticle import *
+from myproject.Fibonacci.fibonacci import *
 
 
-# def test_cat_calling():
-#     c = Cat("Feli")
-#     assert str(c) == "Feli"
-#
-#
-# def test_meow():
-#     c = Cat("Catus")
-#     assert c.meow() == "meow"
+def test_parseArticle():
+    listinput = ['iceland', 'economy', 'weathered']
+    c = countTotalWords(listinput)
+    assert c == 3
+
+def test_fibonnaci():
+    var = fibonacci(70)
+    assert var == 190392490709135

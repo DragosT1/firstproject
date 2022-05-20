@@ -52,6 +52,7 @@ def findPhoneNb(listinput):
 
 def countTotalWords(listinput2):
     print("Total number of words: " + str(len(listinput2)))
+    return(len(listinput2))
 
 def countUniqueWords(listinput3):
     # initialize a null list
@@ -79,14 +80,11 @@ def top5Words (list1,list2):
     print("top4 word appearance is: " + str(sortedunuque[len(sortedunuque) - 4]))
     print("top5 word appearance is: " + str(sortedunuque[len(sortedunuque) - 5]))
 
-# def main():
-#     input = open("/Users/user/work/firstproject/articleInput.txt", "r")
-#     cleanedText = replaceUnwantedChar(input)
-#     findPhoneNb(cleanedText)
-#     countTotalWords(cleanedText)
-#     uniqueWordsList = countUniqueWords(cleanedText)
-#     print("Number of unique words is: " + str(len(uniqueWordsList)))
-#     top5Words(cleanedText, uniqueWordsList)
-#
-# if __name__ == "__main__":
-#     main()
+def parseArticleSuite(path):
+    input = open(path, "r")
+    cleanedText = replaceUnwantedChar(input)
+    findPhoneNb(cleanedText)
+    countTotalWords(cleanedText)
+    uniqueWordsList = countUniqueWords(cleanedText)
+    print("Number of unique words is: " + str(len(uniqueWordsList)))
+    top5Words(cleanedText, uniqueWordsList)

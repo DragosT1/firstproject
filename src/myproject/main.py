@@ -1,16 +1,11 @@
-from myproject.waterbottle.bottle import drink
 from myproject.parserart.parseArticle import *
+from myproject.Fibonacci.fibonacci import *
 
-from myproject.parserart.parseArticle import replaceUnwantedChar, findPhoneNb, countTotalWords, countUniqueWords, \
-    top5Words
 
 
 if __name__ == "__main__":
+    path = "/Users/user/work/firstproject/articleInput.txt"
+    parseArticleSuite(path)
 
-    input = open("parserart/parseArticle.py", "r")
-    cleanedText = replaceUnwantedChar(input)
-    findPhoneNb(cleanedText)
-    countTotalWords(cleanedText)
-    uniqueWordsList = countUniqueWords(cleanedText)
-    print("Number of unique words is: " + str(len(uniqueWordsList)))
-    top5Words(cleanedText, uniqueWordsList)
+    nterms = int(input("How many terms? "))
+    fibonacci(nterms)
