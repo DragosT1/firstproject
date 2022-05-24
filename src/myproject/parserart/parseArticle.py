@@ -74,7 +74,7 @@ def countUniqueWordsTOP5(listinput3):
                 dicts[element] += 1
     # Sort dict and print top 5 key appearances
     sortedunuque = sorted(dicts.items(), key=lambda val: val[1], reverse=True)
-    print(sortedunuque)
+    # print(sortedunuque)
     for topWords in range(5):
         print("top" + str(topWords + 1) + " word appearance is: " + str(sortedunuque[topWords]))
 
